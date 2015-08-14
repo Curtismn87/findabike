@@ -14,14 +14,23 @@
  *= require_self
  */
 
- *{
+ * {
    box-sizing: border-box;
  }
 
-body{
+body {
   background-color: black;
   font-family: 'Roboto Condensed', sans-serif;
   padding-bottom: 50px;
+  color: white;
+}
+
+form {
+  margin-left: 5em;
+}
+
+.field, label {
+  margin: 1em;
 }
 
 nav {
