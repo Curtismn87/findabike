@@ -5,7 +5,7 @@ class BikesController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     if @user.id == current_user.id
-      #show list of bikes
+      @bikes = @user.bikes.all
     else
       redirect_to root_path
     end
