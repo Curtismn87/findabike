@@ -13,12 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
  *{
    box-sizing: border-box;
  }
 
 body{
-  padding: 50px 15px;
+  background-color: black;
+  color: white;
 }
 
 nav {
@@ -39,4 +41,39 @@ nav li{
 
 nav ul{
   margin: 0;
+}
+
+section {
+  background-color: #ccc;
+  border: 2px solid red;
+  width: 100%;
+  text-align: center;
+}
+
+.banner{
+  background-image: url("http://media.tumblr.com/tumblr_m9fqcwuzl11r1p25e.jpg");
+  background-size: cover;
+  height: 486px;
+  padding-top: 5%;
+}
+
+.banner p {
+  color: white;
+  font-size: 28px;
+}
+
+section.middle {
+  background-image: url("http://i.imgur.com/eI6OnG8.jpg");
+  background-size: cover;
+  height: 373px;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer h2{
+  padding-top: 20px;
+  margin-top: 0;
 }

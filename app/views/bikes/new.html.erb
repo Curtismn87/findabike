@@ -1,0 +1,33 @@
+<h1> New Bike Page </h1>
+
+<%= form_for [@user, @bike] do |f| %>
+
+  <%= f.label :model %>
+  <%= f.text_field :model, :placeholder => "model" %>
+
+  <%= f.label :color%>
+  <%= f.text_field :color, :placeholder => "color" %>
+
+  <%= f.label :year%>
+  <%= f.text_field :year, :placeholder => "year" %>
+
+  <%= f.label :type%>
+  <%= f.text_field :type, :placeholder => "type" %>
+
+  <%= f.label :serial_number%>
+  <%= f.text_field :serial_number, :placeholder => "serial number" %>
+
+  <%= f.label :purchase_date%>
+  <%= f.text_field :purchase_date, :placeholder => "purchase date" %>
+
+  <%= f.label :purchase_price%>
+  <%= f.text_field :purchase_price, :placeholder => "purchase price" %>
+
+  <%= f.label :receipt_document%>
+  <%= f.text_field :receipt_document, :placeholder => "receipt document" %>
+
+  <%= f.label :receipt_photo_url%>
+  <%= f.text_field :receipt_photo_url, :placeholder => "recepit photo url" %>
+
+  <%= f.submit %>
+<% end  %>

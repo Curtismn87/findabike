@@ -1,4 +1,4 @@
 <h1>This is a bike index</h1>
 <%= @bikes.each do |bike| %>
-  <%= %>
+  <%= link_to "#{bike.year} #{bike.color} #{bike.model}", user_bike_path %>
 <% end %>
