@@ -19,5 +19,5 @@ Incident.create(user_id: user1, bike_id: bike1, incident_address: "123 Main St",
 Incident.create(user_id: user2, bike_id: bike2, incident_address: "1230 15th St", incident_start_time: "2015-02-01 01:00:00", incident_end_time: "2015-02-01 02:00:00", location_type: "bike rack", description: "Here's what happened", gps_location: "lat/long")
 
 # ======= Profiles: user_id, username, firstname, lastname, address, phone, race, ethnicity, sex, DOB
-Profile.create(user_id: 1, username: "tb", firstname: "Tom", lastname: "Beach", address: "734 Quebec Place NW", phone: "202-123-4567", race: "white", ethnicity: "white", sex: "male", DOB: "2015-08-10")
-Profile.create(user_id: 2, username: "th", firstname: "Tor", lastname: "Heyerdahl", address: "1800 Norway Ave", phone: "202-987-6543", race: "white", ethnicity: "white", sex: "male", DOB: "2015-08-20")
+# Profile.create(user_id: 1, username: "tb", firstname: "Tom", lastname: "Beach", address: "734 Quebec Place NW", phone: "202-123-4567", race: "white", ethnicity: "white", sex: "male", DOB: "2015-08-10")
+# Profile.create(user_id: 2, username: "th", firstname: "Tor", lastname: "Heyerdahl", address: "1800 Norway Ave", phone: "202-987-6543", race: "white", ethnicity: "white", sex: "male", DOB: "2015-08-20")
