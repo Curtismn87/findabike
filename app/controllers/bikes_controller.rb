@@ -3,8 +3,10 @@ class BikesController < ApplicationController
   end
 
   def index
+    @bikes = Bike.where(:user_id => current_user.id)
     @user = User.find(params[:user_id])
     if @user.id == current_user.id
+      @bikes = @user.bikes.all
     else
       redirect_to root_path
     end
