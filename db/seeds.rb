@@ -11,8 +11,8 @@ user1 = User.create(email: "tb@gmail.com", encrypted_password: "ljhv", reset_pas
 user2 = User.create(email: "th@gmail.com", encrypted_password: "ougy", reset_password_token: "utf", reset_password_sent_at: "2013-02-01 01:00:00", remember_created_at: "2013-02-01 01:00:00", sign_in_count: 1, current_sign_in_at: "2013-02-01 01:00:00", last_sign_in_at: "2013-02-01 01:00:00", current_sign_in_ip: "", last_sign_in_ip: "", created_at: "2013-02-01 01:00:00", updated_at: "2013-02-01 01:00:00")
 
 # ======= Bike: model, color, year, type, serial_number, purchase_date, purchase_price, receipt_document, receipt_photo_url
-bike1 = Bike.create(model: "Trek", color: "black", year: 2013, type: "hybrid", serial_number: "AK47", purchase_date: "2013-02-01", purchase_price: 550.00, receipt_document: "receipt.rtf", receipt_photo_url: "images/receipt.png")
-bike2 = Bike.create(model: "Sirrius", color: "red", year: 2013, type: "road", serial_number: "AK4w4567", purchase_date: "2014-02-01", purchase_price: 500.00, receipt_document: "receipt2.rtf", receipt_photo_url: "images/receipt2.png")
+bike1 = Bike.create(model: "Trek", color: "black", year: 2013, bike_type: "hybrid", serial_number: "AK47", purchase_date: "2013-02-01", purchase_price: 550.00, receipt_document: "receipt.rtf", receipt_photo_url: "images/receipt.png")
+bike2 = Bike.create(model: "Sirrius", color: "red", year: 2013, bike_type: "road", serial_number: "AK4w4567", purchase_date: "2014-02-01", purchase_price: 500.00, receipt_document: "receipt2.rtf", receipt_photo_url: "images/receipt2.png")
 
 # ======= Incidents: user_id, bike_id, incident_address, incident_start_time, incident_end_time, location_type, description, gps_location
 Incident.create(user_id: user1, bike_id: bike1, incident_address: "123 Main St", incident_start_time: "2013-02-01 01:00:00", incident_end_time: "2013-02-01 02:00:00", location_type: "alley", description: "Here's what happened", gps_location: "lat/long")

@@ -14,33 +14,71 @@
  *= require_self
  */
 
- *{
+/* ======= general ======= */
+ * {
    box-sizing: border-box;
  }
 
-body{
+body {
+  font-family: sans-serif;
   background-color: black;
   color: white;
 }
 
+.row {
+	overflow: auto;
+}
+
+.column {
+	float: left;
+	border: 0px solid tomato;
+}
+.column:before {
+  content: "\00a0";
+}
+
+.column-1 { width: 8.333%; }
+.column-2 { width: 16.66%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.33%; }
+.column-5 { width: 41.66%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.33%; }
+.column-8 { width: 66.66%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.33%; }
+.column-11 { width: 91.66%; }
+.column-12 { width: 100%; }
+
+/* ======= nav ======= */
 nav {
-  position: fixed;
-  z-index: 100;
+  position: relative;
+  /*overflow: auto;
+  z-index: 100;*/
   right: 0;
   top: 0;
   width: 100%;
-  background-color: #ccc;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333;
 }
 
-nav li{
+nav.li {
   display: inline-block;
   border: 2px solid;
   padding: 5px;
+  margin: 0 5px;
   float: right;
 }
 
-nav ul{
-  margin: 0;
+nav.ul {
+  margin: 0 20px;
+}
+
+/* ======= sections ======= */
+.header {
+  height: 10px;
+  line-height: 10px;
 }
 
 section {
@@ -50,7 +88,7 @@ section {
   text-align: center;
 }
 
-.banner{
+.banner {
   background-image: url("http://media.tumblr.com/tumblr_m9fqcwuzl11r1p25e.jpg");
   background-size: cover;
   height: 486px;
@@ -68,12 +106,17 @@ section.middle {
   height: 373px;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   text-align: center;
 }
-footer h2{
+footer h2 {
   padding-top: 20px;
   margin-top: 0;
+}
+
+/* ======= forms ======= */
+.field, .actions {
+  margin: 0.5em;
 }
