@@ -20,6 +20,7 @@
 
 body{
   background-color: black;
+  font-family: 'Roboto Condensed', sans-serif;
   padding-bottom: 50px;
 }
 
@@ -50,6 +51,10 @@ nav li{
   font-size: 12px;
 }
 
+nav li:hover{
+  cursor: pointer;
+}
+
 nav li a{
   text-decoration: none;
 }
@@ -77,7 +82,6 @@ li.sign-in a:visited{
 
 section {
   background-color: #ccc;
-  border: 2px solid red;
   width: 100%;
   text-align: center;
 }
@@ -86,12 +90,29 @@ section {
   background-image: url("http://media.tumblr.com/tumblr_m9fqcwuzl11r1p25e.jpg");
   background-size: cover;
   height: 486px;
-  padding-top: 5%;
+  padding-top: 7%;
+  border-bottom: 15px solid #B80000;
 }
 
 .banner p {
   color: white;
   font-size: 28px;
+}
+
+.banner-text{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.sign_up a{
+  background-color: #F0F0F0;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: black;
+  font-size: 30px;
+  padding: 8px;
+  text-decoration: none;
 }
 
 section.middle {
@@ -108,4 +129,13 @@ footer{
 footer h2{
   padding-top: 20px;
   margin-top: 0;
+}
+footer .join_us a{
+  background-color: #F0F0F0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+footer p{
+  margin: 30px;
 }
