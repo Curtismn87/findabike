@@ -2,49 +2,49 @@
 
 <!-- user_id, username, firstname, lastname, address, phone, race, ethnicity, sex, DOB -->
 
-<%= form_for @profile user_profiles_path do |f| %>
+<%= form_for [@user, @profile] do |f| %>
   <div class="field">
-    <%= f.username_field :username %>
+    <%= f.text_field :username %>
     <%= f.label :username %><br />
   </div>
 
   <div class="field">
-    <%= f.firstname_field :firstname %>
+    <%= f.text_field :firstname %>
     <%= f.label :firstname %><br />
   </div>
 
   <div class="field">
-    <%= f.lastname_field :lastname %>
+    <%= f.text_field :lastname %>
     <%= f.label :lastname %><br />
   </div>
 
   <div class="field">
-    <%= f.address_field :address %>
+    <%= f.text_field :address %>
     <%= f.label :address %><br />
   </div>
 
   <div class="field">
-    <%= f.phone_field :phone %>
+    <%= f.text_field :phone %>
     <%= f.label :phone %><br />
   </div>
 
   <div class="field">
-    <%= f.race_field :race %>
+    <%= f.text_field :race %>
     <%= f.label :race %><br />
   </div>
 
   <div class="field">
-    <%= f.ethnicity_field :ethnicity %>
+    <%= f.text_field :ethnicity %>
     <%= f.label :ethnicity %><br />
   </div>
 
   <div class="field">
-    <%= f.sex_field :sex %>
+    <%= f.text_field :sex %>
     <%= f.label :sex %><br />
   </div>
 
   <div class="field">
-    <%= f.DOB_field :DOB %>
+    <%= f.text_field :DOB %>
     <%= f.label :DOB %><br />
   </div>
 
