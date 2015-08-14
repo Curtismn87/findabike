@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "bikes#home"
   resources :users do
     resources :bikes
-    resources :profiles
+    resources :profiles, only: [:new, :create]
   end
   resources :incidents
 end
